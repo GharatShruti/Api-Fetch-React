@@ -5,15 +5,18 @@ const Card = ({
     imgSrc,
     imgAlt,
     cardtitle,
-    carsdesc,
+    carddesc,
+    description,
     cardbtn,
+    link,
 }) => {
   return (
     <div className="Card-container">
         <img className="Card-img" src={imgSrc} alt={imgAlt} />
-        <h1 className="Card-title">{cardtitle}</h1>
-        <p className="Card-description">{carsdesc}</p>
-        <a className="Card-btn" href="/">{cardbtn}</a>
+        <h1 className="Card-title"><h5>Country:</h5>{cardtitle}</h1>
+        <p className="Card-description"><h4>Alternate Spellings:</h4>{carddesc}</p>
+        <p className="Card-description"><h4>Capital:</h4>{description}</p>
+        <a className="Card-btn" href={link}><h4>Population:</h4>{cardbtn}</a>
     </div>
   )
 }
