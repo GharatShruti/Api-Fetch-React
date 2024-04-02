@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .Card-img{
@@ -15,7 +15,9 @@
 }
 
 .Card-title, .Card-description{
-  margin: 0.5rem 5%;  
+  margin: 0.5rem 5%; 
+  overflow: auto;
+  text-overflow: ellipsis;
 }
 
 .Card-btn{
