@@ -1,6 +1,5 @@
 import "./Card.css"
 
-// eslint-disable-next-line no-empty-pattern
 const Card = ({
     imgSrc,
     imgAlt,
